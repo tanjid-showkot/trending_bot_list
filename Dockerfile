@@ -10,7 +10,7 @@ RUN pip3 install -U pip
 
 RUN cd /
 
-RUN git clone https://github.com/tanjid-showkot/trending_bot_list
+RUN git clone https://github.com/tanjid-showkot/trending_bot_list.git
 
 RUN cd trending_bot_list
 
