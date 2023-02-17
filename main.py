@@ -22,7 +22,7 @@ def list_tokens(message):
     token_list = ""
     for x, prios in enumerate(prio):
         token_list += f"{x+1}: {prios}\n"
-    bot.reply_to(message, token_list)
+    bot.reply_to(message, f"{token_list}\n Devoloped by https://t.me/dev_andrei")
 
 
 def sto(response):
