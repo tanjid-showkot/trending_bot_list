@@ -28,15 +28,16 @@ def list_tokens(message):
 
 def sto(url):
     
-    store = []
+   
     while True:
+        store = []
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
             for x in range(len(data["data"])):
                 store.append(data["data"][x]["token"])
             return store
-        time.sleep(60)
+        time.sleep(10)
       
 
   
